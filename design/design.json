@@ -1,0 +1,118 @@
+{
+  "design_system": {
+    "name": "Soft-Contrast UI",
+    "version": "1.0",
+    "description": "A minimalistic, tactile design system that relies on high border radii, soft diffused shadows for depth, and bold high-contrast typography. Avoids borders in favor of elevation.",
+    "principles": [
+      "Tactile Depth: Elements should feel like they are sitting on top of the background, not embedded in it.",
+      "Radical Roundness: Avoid sharp corners. Use pill shapes for inputs/buttons and large radii for cards.",
+      "Contrast over Decoration: Use the stark difference between black and white to define hierarchy.",
+      "Borders are Noise: Do not use strokes/borders to define edges. Use background color differences and shadows."
+    ]
+  },
+  "foundation": {
+    "colors": {
+      "background": {
+        "light": "#F5F5F7",
+        "dark": "#111111",
+        "card_light": "#FFFFFF",
+        "card_dark": "#1E1E1E"
+      },
+      "text": {
+        "primary_light": "#000000",
+        "primary_dark": "#FFFFFF",
+        "secondary": "#8E8E93",
+        "tertiary": "#C7C7CC"
+      },
+      "action": {
+        "primary": "#000000",
+        "primary_text": "#FFFFFF",
+        "danger": "#EF4444",
+        "success": "#22C55E",
+        "accent_gradient": "linear-gradient(135deg, #000000 0%, #555555 100%)"
+      }
+    },
+    "typography": {
+      "font_family": "Inter, DM Sans, or Poppins (Geometric Sans-Serif)",
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      },
+      "hierarchy": {
+        "h1": { "size": "2rem", "weight": "bold", "letter_spacing": "-0.02em" },
+        "h2": { "size": "1.5rem", "weight": "bold", "letter_spacing": "-0.01em" },
+        "body": { "size": "1rem", "weight": "medium", "line_height": "1.5" },
+        "caption": { "size": "0.875rem", "weight": "medium", "color": "secondary" },
+        "label": { "size": "0.75rem", "weight": "bold", "text_transform": "uppercase" }
+      }
+    },
+    "shape": {
+      "radius": {
+        "small": "12px",
+        "medium": "20px",
+        "large": "32px",
+        "pill": "9999px"
+      }
+    },
+    "effects": {
+      "shadows": {
+        "card_lift": "0px 10px 30px rgba(0, 0, 0, 0.08)",
+        "button_lift": "0px 4px 12px rgba(0, 0, 0, 0.15)",
+        "inner_depth": "inset 0px 2px 4px rgba(0, 0, 0, 0.05)"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "black",
+        "text": "white",
+        "radius": "medium",
+        "shadow": "button_lift"
+      },
+      "icon_only": {
+        "shape": "circle or squircle",
+        "aspect_ratio": "1:1",
+        "radius": "medium"
+      },
+      "stepper": {
+        "style": "pill_container",
+        "background": "white",
+        "button_bg": "black",
+        "button_text": "white",
+        "button_shape": "circle"
+      }
+    },
+    "cards": {
+      "style": "clean_surface",
+      "background": "white",
+      "radius": "large",
+      "shadow": "card_lift",
+      "padding": "24px",
+      "border": "none"
+    },
+    "inputs": {
+      "style": "floating_pill",
+      "background": "white",
+      "radius": "medium",
+      "shadow": "card_lift",
+      "border": "none",
+      "text_align": "left"
+    },
+    "toggles": {
+      "track_inactive": "#E5E5EA",
+      "track_active": "#22C55E",
+      "thumb": "white",
+      "radius": "pill",
+      "shadow": "button_lift"
+    },
+    "sliders": {
+      "track_height": "4px",
+      "track_color": "rgba(255,255,255,0.2)",
+      "thumb_size": "24px",
+      "thumb_color": "white",
+      "thumb_shadow": "0px 2px 4px rgba(0,0,0,0.2)"
+    }
+  }
+}
